@@ -14,6 +14,7 @@
     <div class="fixed-container">
         Самые <a href="3#">свежие новости</a> в реальном времени
         <div id="date-time">11:30 11/10/20</div>
+        <h1></h1>
     </div>
 </div>
 </body>
