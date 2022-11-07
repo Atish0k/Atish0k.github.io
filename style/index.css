@@ -37,7 +37,7 @@ hr{
     float: right;
 }
 
-pre {
+pre.code {
     font-size: 15px;
     border: 2px solid grey;
     width: 460px;
@@ -62,4 +62,18 @@ pre {
     font-size: 20px;
     color: #838283;
     padding-left: 25px;
+}
+.text2{
+    font-size: 100px;
+    color: black;
+    font-weight: bold;
+    padding-left: 35px;
+    line-height: 5px;
+}
+.tickerText{
+    font-size: 100px;
+    color: #3357E0;
+    font-weight: bold;
+    padding-left: 35px;
+    line-height: 5px;
 }
