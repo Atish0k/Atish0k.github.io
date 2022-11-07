@@ -13,6 +13,7 @@ body{
     background: #333333;
     text-align: center;
     margin: 50px auto;
+
 }
 .ts {
     font-size: 57px;
@@ -53,6 +54,7 @@ nav {
     height: 50px;
     display: flex;
     align-items: center;
+
 }
 a {
     font-size: 25px;
@@ -72,6 +74,7 @@ a:hover {
     float: right;
     width: 1700px;
     height: auto;
+
 }
 .clear {
     clear: both;
