@@ -74,6 +74,11 @@ pre.code {
     font-size: 100px;
     color: #3357E0;
     font-weight: bold;
-    padding-left: 35px;
+    padding-left: 15px;
     line-height: 5px;
 }
+a.tickerText:hover{
+    color: #0160ad;
+    font-size: 120px;
+}
+
