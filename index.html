@@ -100,7 +100,7 @@
                             Самый быстрый способ попробовать программирование прямо в браузере. Бесплатные курсы с тренажером. Практика после каждого урока.
                         </p>
                         <div class="buttonC">
-                            <a class="button" href="registration.html">Попробовать</a>
+                            <a class="button" type="button">Попробовать</a>
                         </div>
                     </div>
                     <div class="codeBlock">
@@ -196,6 +196,15 @@
                         </div>
                     </div>
                     <div class="col-md-4">
+                        <div id="box" class="box"></div>
+                        <script>
+                            var hiddenElement = document.getElementById("box");
+                            var btn = document.querySelector('.button');
+                            function handleButtonClick() {
+                                hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+                            }
+                            btn.addEventListener('click', handleButtonClick);
+                        </script>
                         <div class="product">
                             <a class="card"  href="https://code-basics.com/ru/languages/css">
                             <div class="imageCss">
