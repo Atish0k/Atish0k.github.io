@@ -35,6 +35,7 @@ hr{
     width: 40%;
     text-align: left;
     float: right;
+    font-weight: bold;
 }
 
 pre.code {
