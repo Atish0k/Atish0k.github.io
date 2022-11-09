@@ -2,6 +2,9 @@
     font-family: 'Cuprum';
     src: url(https://fonts.gstatic.com/s/cuprum/v20/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjbYJwQj.woff2);
 }
+* {
+    box-sizing: border-box;
+}
 img.logo{
     width: 250px;
     border-style: solid;
@@ -88,12 +91,40 @@ a:hover {
     height: auto;
 
 }
-.clear {
-    clear: both;
-}
+
 footer {
     background: #838283;
-    height: 130px;
-    width: auto;
     border-radius: 0 0 35px 35px;
+
+    padding: 10px;
+
+}
+a.navFooter{
+    font-size: 25px;
+}
+.row2{
+    width: 1400px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+.textFooter{
+    font-size: 35px;
+    line-height: 0;
+}
+.text3{
+    color: black;
+}
+.fa-brands {
+    font-size: 45px;
+}
+.colFooter{
+    height: 100px;
+    display: table-cell;
+}
+.col1,.col3{
+    width: 20%;
+}
+.col2{
+    width: 59.999%;
 }

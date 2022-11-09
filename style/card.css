@@ -9,9 +9,6 @@
     justify-content: center;
     align-items: center;
 }
-.container3{
-
-}
 .product{
     line-height: 5px;
     height: 290px;
@@ -25,7 +22,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    height: 200px;
+    height: auto;
     width: 180px;
     font-size: 19px;
     color: #656565;
