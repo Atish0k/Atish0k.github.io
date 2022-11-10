@@ -57,6 +57,13 @@ h1 {
     padding: 20px;
     margin: 0;
 }
+hr{
+    display: block;
+    margin-top: 0.5em;
+    border-style: inset;
+    border-width: 2px;
+    width: 1500px;
+}
 .header {
     background: url("../img/header.jpg");
     width: auto;
