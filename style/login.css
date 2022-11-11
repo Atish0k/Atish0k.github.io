@@ -81,3 +81,9 @@ a.button{
 .point{
     color: #062eb4;
 }
+.input.error{
+    border-color: red;
+}
+.checkbox__input.error + .checkbox__label{
+    color: red;
+}
