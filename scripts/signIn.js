@@ -38,6 +38,7 @@ function valid(inp, el, mess){
     inp.classList.remove('is-valid');
     el.innerHTML = mess;
 }*/
+
 let form = document.querySelector('.js-form'),
     formInputs = document.querySelectorAll('.js-input'),
     inputEmail = document.querySelector('.js-input-email'),
