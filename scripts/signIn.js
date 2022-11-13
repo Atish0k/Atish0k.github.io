@@ -16,8 +16,6 @@ document.querySelector('.button-1').onclick = function (e) {
 }
 
 
-
-
 function updateButton() {
     if (button.value === 'Отправить') {
         button.value = 'Отправлено';
