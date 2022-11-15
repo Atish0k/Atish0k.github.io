@@ -3,9 +3,10 @@
 }
 .content{
     height: auto;
+    margin-top: -35px;
 }
 .reviews{
-    height: 300px;
+    height: 500px;
 }
 
 .slider {
@@ -117,9 +118,10 @@
     text-transform: uppercase;
 }
 .slider__txt {
+    font-size: 25px;
     color: #999;
     margin-bottom: 3rem;
-    max-width: 300px;
+    max-width: 600px;
 }
 
 @-webkit-keyframes check {
@@ -147,7 +149,7 @@
 .textkurs{
     text-align: left;
     padding-left: 145px;
-    padding-top: 15px;
+    padding-top: 25px;
     font-size: 35px;
     line-height: 0;
     font-weight: bold;
@@ -175,5 +177,4 @@
     margin-inline-end: 0;
 }
 hr{
-    margin-top: 25px;
 }

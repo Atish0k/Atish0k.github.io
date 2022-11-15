@@ -96,13 +96,15 @@ a:hover {
     max-width: 100%;
     width: 1700px;
     height: auto;
-
+    padding-bottom: 5%;
+    margin-top: -8px;
 }
 
 footer {
     background: #838283;
     border-radius: 0 0 35px 35px;
     padding: 10px;
+    height: auto;
 }
 
 a.navFooter{
@@ -110,9 +112,11 @@ a.navFooter{
 }
 .row2{
     width: 82.35294118%;
-    display: table;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     margin-right: auto;
     margin-left: auto;
+    height: auto;
 }
 .textFooter{
     font-size: 45px;
@@ -131,14 +135,9 @@ a.navFooter{
 }
 .colFooter{
     height: 5px;
-    display: table-cell;
+    height: auto;
 }
-.col1,.col3{
-    width: 20%;
-}
-.col2{
-    width: 59.999%;
-}
+
 .aFooter{
     line-height: 0;
     font-size: 45px;
@@ -149,12 +148,12 @@ a.navFooter{
 
 
 
-@media all and (min-width: 1024px) and (max-width: 1280px){
+@media all and (min-width: 1022px) and (max-width: 1280px){
     .container,.container2,.container3{
         width: 1020px;
     }
 }
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 768px) and (max-width: 1022px){
     .container,.container2,.container3{
         width: 750px;
     }
