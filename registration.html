@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>OnCode</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="stylesheet" type="text/css" href="style/login.css">
