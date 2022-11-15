@@ -62,7 +62,7 @@ hr{
     margin-top: 0.5em;
     border-style: inset;
     border-width: 2px;
-    width: 1500px;
+    width: 88.2352%;
 }
 .header {
     background: url("../img/header.jpg");
@@ -93,7 +93,7 @@ a:hover {
 }
 .content {
     background: #d2d0d2;
-    float: right;
+    max-width: 100%;
     width: 1700px;
     height: auto;
 
@@ -109,7 +109,7 @@ a.navFooter{
     font-size: 25px;
 }
 .row2{
-    width: 1400px;
+    width: 82.35294118%;
     display: table;
     margin-right: auto;
     margin-left: auto;
@@ -145,6 +145,29 @@ a.navFooter{
     float: left;
     height: 25px;
     padding-bottom: 40px;
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px){
+    .container,.container2,.container3{
+        width: 1020px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .container,.container2,.container3{
+        width: 750px;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 768px){
+    .container,.container2,.container3{
+        width: 470px;
+    }
+}
+@media all and (max-width: 480px){
+    .container,.container2,.container3{
+        width: 470px
+    }
 }
 .main-contacts{
     background: #d4e5ed;

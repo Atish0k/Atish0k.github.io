@@ -1,13 +1,17 @@
 .row{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
+
 }
 .col-md-4{
     height: auto;
-    width: 1400px;
+    max-width: 100%;
+    width: 82.35294118%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .product{
     line-height: 5px;
@@ -17,6 +21,7 @@
     box-shadow: 5px 10px 15px #5e6060;
     margin: 3%;
     cursor: pointer;
+    max-width: 100%;
 }
 .info-price{
     display: flex;

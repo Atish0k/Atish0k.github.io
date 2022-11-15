@@ -10,7 +10,7 @@
 .block{
     margin-left: auto;
     margin-right: auto;
-    width: 1400px;
+    width: 82.35294118%;
     height: auto;
     background: #D4E5ED;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -115,7 +115,7 @@ a.button:active{
 .container3{
     margin-left: auto;
     margin-right: auto;
-    width: 1400px;
+    width: 82.35294118%;
     height: auto;
 }
 
