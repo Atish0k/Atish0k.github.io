@@ -81,8 +81,8 @@
             <a class="point" href="index.html">ГЛАВНАЯ</a>
             <a href="aboutUs.html">О НАС</a>
             <a href="contacts.html">КОНТАКТЫ</a>
-            <a href="login.html">ВХОД</a>
-            <a href="registration.html">РЕГИСТРАЦИЯ</a>
+            <a href="login.php">ВХОД</a>
+            <a href="registration.php">РЕГИСТРАЦИЯ</a>
         </nav>
         <div class="content">
             <hr>
@@ -349,8 +349,8 @@
                         <a class="navFooter" href="index.html">ГЛАВНАЯ</a>
                         <a class="navFooter" href="aboutUs.html">О НАС</a>
                         <a class="navFooter" href="contacts.html">КОНТАКТЫ</a>
-                        <a class="navFooter" href="login.html">ВХОД</a>
-                        <a class="navFooter" href="registration.html">РЕГИСТРАЦИЯ</a>
+                        <a class="navFooter" href="login.php">ВХОД</a>
+                        <a class="navFooter" href="registration.php">РЕГИСТРАЦИЯ</a>
                     </div>
                     <div class="colFooter col3">
                             <a class="aFooter" href="https://t.me/artiisshok"><i class="fa-brands fa-telegram"></i>Artiisshok</a>
