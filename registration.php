@@ -1,7 +1,6 @@
 <?php
 include ("app/controllers/users.php");
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,8 +20,8 @@ include ("app/controllers/users.php");
     </div>
     <nav>
         <a href="index.php">ГЛАВНАЯ</a>
-        <a href="aboutUs.html">О НАС</a>
-        <a href="contacts.html">КОНТАКТЫ</a>
+        <a href="aboutUs.php">О НАС</a>
+        <a href="contacts.php">КОНТАКТЫ</a>
         <a href="login.php">ВХОД</a>
         <a  class="point" href="registration.php">РЕГИСТРАЦИЯ</a>
     </nav>
@@ -61,7 +60,6 @@ include ("app/controllers/users.php");
                 </form>
             </div>
             <div class = "form-buttons">
-
                 <div class = "divider"</div>
                 <a href = "login.php">Авторизоваться</a>
                 <h1 class = "form-title"></h1>
@@ -77,8 +75,8 @@ include ("app/controllers/users.php");
                 </div>
                 <div class="colFooter col2">
                     <a class="navFooter" href="index.php">ГЛАВНАЯ</a>
-                    <a class="navFooter" href="aboutUs.html">О НАС</a>
-                    <a class="navFooter" href="contacts.html">КОНТАКТЫ</a>
+                    <a class="navFooter" href="aboutUs.php">О НАС</a>
+                    <a class="navFooter" href="contacts.php">КОНТАКТЫ</a>
                     <a class="navFooter" href="login.php">ВХОД</a>
                     <a class="navFooter" href="registration.php">РЕГИСТРАЦИЯ</a>
                 </div>
