@@ -1,6 +1,6 @@
 <?php
-//include ("app/controllers/users.php");
-include ("app/controllers/user.php");
+include ("app/controllers/users.php");
+
 
 ?>
 
