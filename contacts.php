@@ -45,7 +45,7 @@ include 'app/database/db.php';
         <p class="textkurs">Связаться с нами</p>
         <hr>
         <form method="post" action="telegram.php">
-            <p class="contact">Привет, меня зовут<input name="username" type="text" id="name" class="contactName" placeholder="@username Telegram">.</p><br>
+            <p class="contact">Привет, меня зовут<input name="username-telegram" type="text" id="name" class="contactName" placeholder="@username Telegram">.</p><br>
             <textarea placeholder="Ваш вопрос." name="text"></textarea>
 
             <script type="text/javascript">
