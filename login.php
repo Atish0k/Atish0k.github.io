@@ -1,3 +1,7 @@
+<?php
+include ("app/controllers/users.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,15 +33,16 @@
         <main class = "main-login">
             <div class = "register-form-container">
                 <h1 class = "form-title"></h1>
+                <h2><?=$errMsg?></h2>
                 <div class = "form-fields">
-                    <form class = "js-form" id = "form1">
+                    <form class = "js-form" id = "form1" method = "post" action="login.php">
                         <div class = "form-field">
-                            <input type = "text" placeholder="Логин" class = "input js-input">
+                            <input value = "<?=$email?>" type = "email" placeholder="Email" class = "input js-input js-input-email" name = "email">
                         </div>
                         <div class = "form-field">
-                            <input type = "password" placeholder="Пароль" class="input js-input">
+                            <input name = "password" type = "password" placeholder="Пароль" class="input js-input">
                         </div>
-                        <button class = "button" >Войти<a href="account/index.html"></a> </button>
+                        <button class = "button" name = "button-log">Войти</button>
                     </form>
                 </div>
                 <div class = "form-buttons">

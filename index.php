@@ -42,6 +42,7 @@
 
             <?php if (isset($_SESSION['id'])):?>
                 <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
+                <a href = "logout.php">ВЫХОД</a>
                 <?php echo $_SESSION['login']; ?>
             <?php else: ?>
                 <a href="login.php">ВХОД</a>

@@ -55,7 +55,7 @@ include ("app/controllers/users.php");
                         <input class = "checkbox js-input-checkbox" type = "checkbox" placeholder="Повторите пароль" checked="checked">
                         <label>Согласие на обработку персональных данных</label>
                     </div>
-                    <button type = "submit" class = "button button-reg">Регистрация</button>
+                    <button type = "submit" class = "button" name = "button-reg">Регистрация</button>
                     <!--<input id = "check-input-data" class="button-1" value = "Проверить данные" type="submit">
                     <p>Данные не отправлены</p>-->
                 </form>
