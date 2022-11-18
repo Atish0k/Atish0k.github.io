@@ -18,7 +18,6 @@ include ("app/controllers/users.php");
     </div>
     <nav>
         <a href="index.php">ГЛАВНАЯ</a>
-        <a>КУРСЫ</a>
         <a href="aboutUs.php">О НАС</a>
         <a href="contacts.php">КОНТАКТЫ</a>
         <a class="point" href="login.php">ВХОД</a>
