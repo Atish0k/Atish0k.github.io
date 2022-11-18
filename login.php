@@ -17,7 +17,7 @@ include ("app/controllers/users.php");
         <<a href="index.php"><img class="logo" src="img/Logo/logo2.svg"></a>
     </div>
     <nav>
-        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="index.php">ГЛАВНАЯ</a>
         <a>КУРСЫ</a>
         <a href="aboutUs.php">О НАС</a>
         <a href="contacts.php">КОНТАКТЫ</a>

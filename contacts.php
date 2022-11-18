@@ -25,7 +25,7 @@ include 'app/database/db.php';
     <nav>
         <a href="index.php">ГЛАВНАЯ</a>
         <a href="aboutUs.php">О НАС</a>
-        <a class="point" href="contacts.html">КОНТАКТЫ</a>
+        <a class="point" href="contacts.php">КОНТАКТЫ</a>
         <?php if (isset($_SESSION['id'])):?>
             <a class="aaccount" href="#zatemnenie">ЛИЧНЫЙ КАБИНЕТ</a>
             <a href = "logout.php">ВЫХОД</a>
