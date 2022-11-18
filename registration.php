@@ -60,7 +60,7 @@ include ("app/controllers/users.php");
                 </form>
             </div>
             <div class = "form-buttons">
-                <div class = "divider"</div>
+                    <div class = "divider"</div>
                 <a href = "login.php">Авторизоваться</a>
                 <h1 class = "form-title"></h1>
             </div>

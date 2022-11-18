@@ -1,6 +1,6 @@
 <?php
 include "app/database/db.php";
-define ('BASE_URL' , 'http://localhost:63342/Atish0k.github.io/index.php');
+define ('BASE_URL' , 'http://o92867ev.beget.tech/index.php');
 $errMsg = '';
 $regStatus = '';
 

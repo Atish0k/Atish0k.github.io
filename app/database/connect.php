@@ -2,9 +2,9 @@
 
 $driver = 'mysql';
 $host = 'localhost';
-$db_name = 'oncode';
-$db_user = 'root';
-$db_pass = '';
+$db_name = 'o92867ev_oncode';
+$db_user = 'o92867ev_oncode';
+$db_pass = '1cOderoot';
 $charset = 'utf8';
 $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
