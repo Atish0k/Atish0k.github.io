@@ -13,8 +13,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-reg'])){
     $passF = trim($_POST['pass-first']);
     $passS = trim($_POST['pass-sec']);
 
-
-
     if($name === '' || $email === '' || $passF === ''){
         $errMsg = "Не все поля заполнены";
     }elseif(mb_strlen($name, 'UTF-8') < 2){
@@ -41,9 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-reg'])){
             $_SESSION['id'] = $user['id'];
             $_SESSION['login'] = $user['username'];
             header('location: ' . BASE_URL);
-
         }
-
     }
 }
 else{
@@ -52,6 +48,7 @@ else{
     $username = '';
     $email = '';
 }
+
 //Код для формы авторизации
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-log'])) {
 
@@ -74,6 +71,3 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button-log'])) {
 }else{
     $email = '';
 }
-
-
-

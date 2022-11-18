@@ -1,7 +1,6 @@
 <?php
 include ("app/controllers/users.php");
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,17 +12,15 @@ include ("app/controllers/users.php");
     <script src="https://kit.fontawesome.com/de9c951651.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <div class="container">
-
     <div class="header">
         <<a href="index.html"><img class="logo" src="img/Logo/logo2.svg"></a>
     </div>
     <nav>
         <a href="index.html">ГЛАВНАЯ</a>
         <a>КУРСЫ</a>
-        <a href="aboutUs.html">О НАС</a>
-        <a href="contacts.html">КОНТАКТЫ</a>
+        <a href="aboutUs.php">О НАС</a>
+        <a href="contacts.php">КОНТАКТЫ</a>
         <a class="point" href="login.html">ВХОД</a>
         <a href="registration.html">РЕГИСТРАЦИЯ</a>
     </nav>
@@ -63,8 +60,8 @@ include ("app/controllers/users.php");
                 </div>
                 <div class="colFooter col2">
                     <a class="navFooter" href="index.html">ГЛАВНАЯ</a>
-                    <a class="navFooter" href="aboutUs.html">О НАС</a>
-                    <a class="navFooter" href="contacts.html">КОНТАКТЫ</a>
+                    <a class="navFooter" href="aboutUs.php">О НАС</a>
+                    <a class="navFooter" href="contacts.php">КОНТАКТЫ</a>
                     <a class="navFooter" href="login.html">ВХОД</a>
                     <a class="navFooter" href="registration.html">РЕГИСТРАЦИЯ</a>
                 </div>

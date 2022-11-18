@@ -8,7 +8,6 @@ function validateEmail(email){
     return re.test(String(email).toLowerCase())
 }
 
-
 form.onsubmit = function (){
     let emailVal = inputEmail.value;
     emptyInputs = Array.from(formInputs).filter(input => input.value === '')
@@ -27,7 +26,6 @@ form.onsubmit = function (){
         return false;
     }
 
-
     if(!validateEmail(emailVal)){
         console.log('email not valid');
         inputEmail.classList.add('error');
@@ -35,9 +33,6 @@ form.onsubmit = function (){
     }else{
         inputEmail.classList.remove('error')
     }
-
-
-
 }
 
 
