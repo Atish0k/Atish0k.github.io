@@ -41,21 +41,18 @@
 
 
             <?php if (isset($_SESSION['id'])):?>
-                <a href = "#">ЛИЧНЫЙ КАБИНЕТ
-                    <div class="account"><a class="aaccount" href="#zatemnenie"></a></div>
-                    <div id="zatemnenie">
-                        <div id="okno">
-                            <p class="accountText"><?php echo $_SESSION['login']; ?></p>
-                            <a href="#" class="close"><i class="fa-solid fa-xmark"></i></i></a>
-                        </div>
-                    </div>
-                </a>
+                <a class="aaccount" href="#zatemnenie">ЛИЧНЫЙ КАБИНЕТ</a>
                 <a href = "logout.php">ВЫХОД</a>
             <?php else: ?>
                 <a href="login.php">ВХОД</a>
                 <a href="registration.php">РЕГИСТРАЦИЯ</a>
             <?php endif; ?>
-
+            <div id="zatemnenie">
+                <div id="okno">
+                    <p class="accountText"><?php echo $_SESSION['login']; ?></p>
+                    <a href="#" class="close"><i class="fa-solid fa-xmark"></i></i></a>
+                </div>
+            </div>
 
         </nav>
         <div class="content">
