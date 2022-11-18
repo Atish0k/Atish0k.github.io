@@ -20,16 +20,21 @@ include 'app/database/db.php';
     </div>
     <nav>
         <a href="index.php">ГЛАВНАЯ</a>
-        <a class="point" href="aboutUs.html">О НАС</a>
+        <a class="point" href="aboutUs.php">О НАС</a>
         <a href="contacts.php">КОНТАКТЫ</a>
         <?php if (isset($_SESSION['id'])):?>
-            <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
+            <a class="aaccount" href="#zatemnenie">ЛИЧНЫЙ КАБИНЕТ</a>
             <a href = "logout.php">ВЫХОД</a>
-            <?php echo $_SESSION['login']; ?>
         <?php else: ?>
             <a href="login.php">ВХОД</a>
             <a href="registration.php">РЕГИСТРАЦИЯ</a>
         <?php endif; ?>
+        <div id="zatemnenie">
+            <div id="okno">
+                <p class="accountText"><?php echo $_SESSION['login']; ?></p>
+                <a href="#" class="close"><i class="fa-solid fa-xmark"></i></i></a>
+            </div>
+        </div>
     </nav>
     <div class="content">
         <div class="reviews">
@@ -66,14 +71,13 @@ include 'app/database/db.php';
         <p class="textkurs">О проекте</p>
         <hr>
         <div class="aboutProject">
-            <h2 class="h2h2h2">Что такое Code Basics</h2>
-            <p class="ppp">Это открытый бесплатный проект для изучения основ программирования. Интерактивные курсы с практикой рассчитаны на тех, кто только начал интересоваться разработкой. На Code Basics уже есть курсы по PHP, Java, JS, Python, Ruby, HTML, CSS, Racket, Elixir и Go.</p>
-            <p class="ppp">В 2020 году проект Code Basics занял 3 место на Международном конкурсе открытых онлайн-курсов EdCrunch Award OOC в номинации «Лучший внеплатформенный онлайн-курс».</p>
+            <h2 class="h2h2h2">Что такое OnCode</h2>
+            <p class="ppp">Это открытый бесплатный проект для изучения основ программирования. Интерактивные курсы с практикой рассчитаны на тех, кто только начал интересоваться разработкой. На OnCode уже есть курсы по PHP, Java, JS, Python, HTML, CSS.</p>
             <h2 class="h2h2h2">Почему мы его создали</h2>
             <p class="ppp">Большинство доступных материалов для новичков больше похожи на справочники или туториалы в стиле «повтори за учителем».</p>
-            <p class="ppp">Цель проекта Code Basics — грамотный старт. Мы хотим научить начинающих программистов лучшим стандартам кодирования, правильному именованию функций, пониманию систем, а не запоминанию специфики.</p>
-            <h2 class="h2h2h2">Как можно поучаствовать в его разработке</h2>
-            <p class="ppp">Code Basics - это собственный Open Source проект команды Хекслета. Любой программист  может поучаствовать в его разработке: улучшить уроки, исправить неточности и расширить курсы на другие языки программирования. Исходный код платформы Code Basics, всех уроков и упражнений доступен на GitHub.</p>
+            <p class="ppp">Цель проекта OnCode — грамотный старт. Мы хотим научить начинающих программистов лучшим стандартам кодирования, правильному именованию функций, пониманию систем, а не запоминанию специфики.</p>
+            <h2 class="h2h2h2">Как начать обучение?</h2>
+            <p class="ppp">Достаточно просто зарегистрироваться. Регистрация на платформе бесплатная, после регистрации вы получите доступ ко всем курсам OnCode. Выбирайте любой – и проходите.</p>
 
         </div>
     </div>
@@ -90,13 +94,18 @@ include 'app/database/db.php';
                     <a class="navFooter" href="aboutUs.php">О НАС</a>
                     <a class="navFooter" href="contacts.php">КОНТАКТЫ</a>
                     <?php if (isset($_SESSION['id'])):?>
-                        <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
+                        <a class="aaccount" href="#zatemnenie">ЛИЧНЫЙ КАБИНЕТ</a>
                         <a href = "logout.php">ВЫХОД</a>
-                        <?php echo $_SESSION['login']; ?>
                     <?php else: ?>
                         <a href="login.php">ВХОД</a>
                         <a href="registration.php">РЕГИСТРАЦИЯ</a>
                     <?php endif; ?>
+                    <div id="zatemnenie">
+                        <div id="okno">
+                            <p class="accountText"><?php echo $_SESSION['login']; ?></p>
+                            <a href="#" class="close"><i class="fa-solid fa-xmark"></i></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="colFooter col3">
                     <a class="aFooter" href="https://t.me/artiisshok"><i class="fa-brands fa-telegram"></i>Artiisshok</a>
