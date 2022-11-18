@@ -14,15 +14,15 @@ include ("app/controllers/users.php");
 <body>
 <div class="container">
     <div class="header">
-        <<a href="index.html"><img class="logo" src="img/Logo/logo2.svg"></a>
+        <<a href="index.php"><img class="logo" src="img/Logo/logo2.svg"></a>
     </div>
     <nav>
         <a href="index.html">ГЛАВНАЯ</a>
         <a>КУРСЫ</a>
         <a href="aboutUs.php">О НАС</a>
         <a href="contacts.php">КОНТАКТЫ</a>
-        <a class="point" href="login.html">ВХОД</a>
-        <a href="registration.html">РЕГИСТРАЦИЯ</a>
+        <a class="point" href="login.php">ВХОД</a>
+        <a href="registration.php">РЕГИСТРАЦИЯ</a>
     </nav>
     <div class="content">
         <h1 class="ts">Вход</h1>
@@ -44,7 +44,7 @@ include ("app/controllers/users.php");
                 </div>
                 <div class = "form-buttons">
                     <div class = "divider">Или</div>
-                    <a href = "registration.html">Зарегистрироваться</a>
+                    <a href = "registration.php">Зарегистрироваться</a>
                     <h1 class = "form-title"></h1>
                 </div>
             </div>
@@ -59,11 +59,11 @@ include ("app/controllers/users.php");
                     <p class="textFooter">OnCode</p><br><p class="text3">Бесплатные курсы<br>программирования</p>
                 </div>
                 <div class="colFooter col2">
-                    <a class="navFooter" href="index.html">ГЛАВНАЯ</a>
+                    <a class="navFooter" href="index.php">ГЛАВНАЯ</a>
                     <a class="navFooter" href="aboutUs.php">О НАС</a>
                     <a class="navFooter" href="contacts.php">КОНТАКТЫ</a>
-                    <a class="navFooter" href="login.html">ВХОД</a>
-                    <a class="navFooter" href="registration.html">РЕГИСТРАЦИЯ</a>
+                    <a class="navFooter" href="login.php">ВХОД</a>
+                    <a class="navFooter" href="registration.php">РЕГИСТРАЦИЯ</a>
                 </div>
                 <div class="colFooter col3">
                     <a class="aFooter" href="https://t.me/artiisshok"><i class="fa-brands fa-telegram"></i>Artiisshok</a>
