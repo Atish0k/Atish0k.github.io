@@ -25,4 +25,4 @@ foreach ($arr as $key => $value) { // Создаем строку со всем�
     curl_setopt($ch, CURLOPT_HEADER, 1);
     $curl_scraped_page = curl_exec($ch);
     curl_close($ch);
-    ?>
+?>
