@@ -31,9 +31,9 @@
     <div class="content">
         <p class="textkurs">Связаться с нами</p>
         <hr>
-        <form>
-            <p class="contact">Привет, меня зовут<input type="text" id="name" class="contactName" placeholder="@username Telegram">.</p><br>
-            <textarea placeholder="Ваш вопрос."></textarea>
+        <form method="post" action="telegram.php">
+            <p class="contact">Привет, меня зовут<input name="username" type="text" id="name" class="contactName" placeholder="@username Telegram">.</p><br>
+            <textarea placeholder="Ваш вопрос." name="text"></textarea>
 
             <script type="text/javascript">
                 $("#name").click(function(){
@@ -54,7 +54,7 @@
                 };
             </script>
             <div class="buttonC">
-                <button class="button" type="reset">Отправить</button>
+                <button class="button" type="submit" name="submit">Отправить</button>
             </div>
         </form>
     </div>
