@@ -21,7 +21,6 @@ function dbCheckError($query){
 function selectAll($table, $params = []){
     global $pdo;
     $sql = "SELECT * FROM $table";
-
     if(!empty($params)){
         $i = 0;
         echo 'Потихонку работаем';
@@ -37,7 +36,6 @@ function selectAll($table, $params = []){
             $i++;
         }
     }
-
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
@@ -64,13 +62,12 @@ function selectOne($table, $params = []){
             $i++;
         }
     }
-
-    //$sql = $sql . " LIMIT 1";
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
     return $query -> fetch();
 }
+
 //Запись в таблицу БД
 function insert($table, $params){
     global $pdo;
@@ -87,16 +84,12 @@ function insert($table, $params){
         }
         $i++;
     }
-
     $sql = "INSERT INTO $table ($coll) VALUES ($mask)";
-
-//    tt($sql);
-//    exit();
     $query = $pdo->prepare($sql);
     $query->execute($params = []);
     dbCheckError($query);
+    return $pdo->lastInsertId();
 }
-
 
 //Обновление данных
 function update($table, $id, $params){
@@ -111,11 +104,7 @@ function update($table, $id, $params){
         }
         $i++;
     }
-    //UPDATE users SET username = test WHERE id = 16
     $sql = "UPDATE $table SET $str WHERE id = $id";
-
-//    tt($sql);
-//    exit();
     $query = $pdo->prepare($sql);
     $query->execute($params = []);
     dbCheckError($query);
@@ -129,7 +118,7 @@ function delete($table, $id){
     $query->execute($params = []);
     dbCheckError($query);
 }
-delete('users',8);
+
 
 
 

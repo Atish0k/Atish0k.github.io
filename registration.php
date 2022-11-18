@@ -1,3 +1,9 @@
+<?php
+//include ("app/controllers/users.php");
+include ("app/controllers/user.php");
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,28 +36,30 @@
         <div class = "register-form-container">
             <h1 class = "form-title"></h1>
             <div class = "form-fields">
-                <form class = "js-form">
+                <form class = "js-form" method = "post" action = "registration.php">
+
+
                     <div class = "form-field">
-                        <input type = "text" placeholder="ФИО" id = "name" class = "input js-input">
+                        <input type = "text" placeholder="ФИО" id = "name" class = "input js-input" name="name">
                         <!--<div class = "span"></div>-->
                     </div>
                     <div class = "form-field">
-                        <input type = "text" placeholder="Логин" class = "input js-input">
+                        <input type = "text" placeholder="Логин" class = "input js-input" name ="username">
                     </div>
                     <div class = "form-field">
-                        <input type = "email" placeholder="Email" class = "input js-input js-input-email">
+                        <input type = "email" placeholder="Email" class = "input js-input js-input-email" name = "email">
                     </div>
                     <div class = "form-field">
-                        <input type = "password" placeholder="Пароль" class = "input js-input">
+                        <input type = "password" placeholder="Пароль" class = "input js-input" name = "pass-first">
                     </div>
                     <div class = "form-field">
-                        <input type = "password" placeholder="Повторите пароль" class = "input js-input">
+                        <input type = "password" placeholder="Повторите пароль" class = "input js-input" name = "pass-sec">
                     </div>
                     <div class = "form-field">
                         <input class = "checkbox js-input-checkbox" type = "checkbox" placeholder="Повторите пароль" checked="checked">
                         <label>Согласие на обработку персональных данных</label>
                     </div>
-                    <button type = "submit" class = "button">Регистрация</button>
+                    <button type = "submit" class = "button button-reg">Регистрация</button>
                     <!--<input id = "check-input-data" class="button-1" value = "Проверить данные" type="submit">
                     <p>Данные не отправлены</p>-->
                 </form>
