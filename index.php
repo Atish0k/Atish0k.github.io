@@ -1,12 +1,10 @@
 <?php
     include 'app/database/db.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-
     <!--
                                             888
                                             888
@@ -36,9 +34,8 @@
         </div>
         <nav>
             <a class="point" href="index.php">ГЛАВНАЯ</a>
-            <a href="aboutUs.html">О НАС</a>
-            <a href="contacts.html">КОНТАКТЫ</a>
-
+            <a href="aboutUs.php">О НАС</a>
+            <a href="contacts.php">КОНТАКТЫ</a>
 
             <?php if (isset($_SESSION['id'])):?>
                 <a class="aaccount" href="#zatemnenie">ЛИЧНЫЙ КАБИНЕТ</a>
@@ -49,7 +46,7 @@
             <?php endif; ?>
             <div id="zatemnenie">
                 <div id="okno">
-                    <p class="accountText"><?php echo $_SESSION['login']; ?></p>
+                    <p class="accountText"><?php echo $_SESSION['login'];?>. Личный кабинет в разработке</p>
                     <a href="#" class="close"><i class="fa-solid fa-xmark"></i></i></a>
                 </div>
             </div>
@@ -318,10 +315,16 @@
                     </div>
                     <div class="colFooter col2">
                         <a class="navFooter" href="index.php">ГЛАВНАЯ</a>
-                        <a class="navFooter" href="aboutUs.html">О НАС</a>
-                        <a class="navFooter" href="contacts.html">КОНТАКТЫ</a>
-                        <a class="navFooter" href="login.php">ВХОД</a>
-                        <a class="navFooter" href="registration.php">РЕГИСТРАЦИЯ</a>
+                        <a class="navFooter" href="aboutUs.php">О НАС</a>
+                        <a class="navFooter" href="contacts.php">КОНТАКТЫ</a>
+                        <?php if (isset($_SESSION['id'])):?>
+                            <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
+                            <a href = "logout.php">ВЫХОД</a>
+                            <?php echo $_SESSION['login']; ?>
+                        <?php else: ?>
+                            <a href="login.php">ВХОД</a>
+                            <a href="registration.php">РЕГИСТРАЦИЯ</a>
+                        <?php endif; ?>
                     </div>
                     <div class="colFooter col3">
                             <a class="aFooter" href="https://t.me/artiisshok"><i class="fa-brands fa-telegram"></i>Artiisshok</a>
@@ -330,8 +333,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
-
 </body>
 </html>
