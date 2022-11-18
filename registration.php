@@ -1,7 +1,5 @@
 <?php
 include ("app/controllers/users.php");
-
-
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +13,6 @@ include ("app/controllers/users.php");
     <link rel="stylesheet" type="text/css" href="style/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de9c951651.js" crossorigin="anonymous"></script>
-    <!--<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">-->
 </head>
 <body>
 <div class="container">
@@ -27,7 +24,7 @@ include ("app/controllers/users.php");
         <a href="aboutUs.html">О НАС</a>
         <a href="contacts.html">КОНТАКТЫ</a>
         <a href="login.php">ВХОД</a>
-        <a  class="point" href="registration.html">РЕГИСТРАЦИЯ</a>
+        <a  class="point" href="registration.php">РЕГИСТРАЦИЯ</a>
     </nav>
     <div class="content">
         <h1 class="ts">Регистрация</h1>
@@ -37,8 +34,6 @@ include ("app/controllers/users.php");
             <h1 class = "form-title"></h1>
             <div class = "form-fields">
                 <form class = "js-form" method = "post" action = "registration.php">
-
-
                     <div class = "form-field">
                         <input type = "text" placeholder="ФИО" id = "name" class = "input js-input" name="name">
                         <!--<div class = "span"></div>-->
@@ -84,7 +79,7 @@ include ("app/controllers/users.php");
                     <a class="navFooter" href="aboutUs.html">О НАС</a>
                     <a class="navFooter" href="contacts.html">КОНТАКТЫ</a>
                     <a class="navFooter" href="login.php">ВХОД</a>
-                    <a class="navFooter" href="registration.html">РЕГИСТРАЦИЯ</a>
+                    <a class="navFooter" href="registration.php">РЕГИСТРАЦИЯ</a>
                 </div>
                 <div class="colFooter col3">
                     <a class="aFooter" href="https://t.me/artiisshok"><i class="fa-brands fa-telegram"></i>Artiisshok0</a>

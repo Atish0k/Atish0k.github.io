@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="style/contacts.css">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de9c951651.js" crossorigin="anonymous"></script>
+
+    <!-- библиотека jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- плагин Masked Input -->
+    <script src="scripts/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 
@@ -26,7 +31,12 @@
     <div class="content">
         <p class="textkurs">Связаться с нами</p>
         <hr>
-        <p class="contact">Привет, меня зовут   <input type="text" id="name" class="contactName">.</p>
+        <p class="contact">Привет, меня зовут<input type="text" id="name" class="contactName" placeholder="Ник Телеграмм">.</p>
+        <script type="text/javascript">
+            $(function(){
+                $("#name").mask("@*");
+            });
+        </script>
         <div class="buttonC">
             <a class="button" type="button">Отправить</a>
         </div>
