@@ -86,13 +86,16 @@
             <a class="point" href="index.html">ГЛАВНАЯ</a>
             <a href="aboutUs.html">О НАС</a>
             <a href="contacts.html">КОНТАКТЫ</a>
-            <a href="login.php">ВХОД</a>
-            <a href="registration.php">РЕГИСТРАЦИЯ</a>
+
 
             <?php if (isset($_SESSION['id'])):?>
                 <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
                 <?php echo $_SESSION['login']; ?>
+            <?php else: ?>
+                <a href="login.php">ВХОД</a>
+                <a href="registration.php">РЕГИСТРАЦИЯ</a>
             <?php endif; ?>
+
 
         </nav>
         <div class="content">
