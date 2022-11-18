@@ -1,3 +1,7 @@
+<?php
+    include 'app/database/db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -36,6 +40,12 @@
             <a href="contacts.html">КОНТАКТЫ</a>
             <a href="login.php">ВХОД</a>
             <a href="registration.php">РЕГИСТРАЦИЯ</a>
+
+            <?php if (isset($_SESSION['id'])):?>
+                <a href = "#">ЛИЧНЫЙ КАБИНЕТ</a>
+                <?php echo $_SESSION['login']; ?>
+            <?php endif; ?>
+
         </nav>
         <div class="content">
             <hr>

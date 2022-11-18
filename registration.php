@@ -32,17 +32,18 @@ include ("app/controllers/users.php");
         <main class="main-reg">
         <div class = "register-form-container">
             <h1 class = "form-title"></h1>
+            <h2><?=$errMsg?></h2>
             <div class = "form-fields">
                 <form class = "js-form" method = "post" action = "registration.php">
                     <div class = "form-field">
-                        <input type = "text" placeholder="ФИО" id = "name" class = "input js-input" name="name">
+                        <input value = "<?=$name?>" type = "text" placeholder="ФИО" id = "name" class = "input js-input" name="name">
                         <!--<div class = "span"></div>-->
                     </div>
                     <div class = "form-field">
-                        <input type = "text" placeholder="Логин" class = "input js-input" name ="username">
+                        <input value = "<?=$username?>"type = "text" placeholder="Логин" class = "input js-input" name ="username">
                     </div>
                     <div class = "form-field">
-                        <input type = "email" placeholder="Email" class = "input js-input js-input-email" name = "email">
+                        <input value = "<?=$email?>" type = "email" placeholder="Email" class = "input js-input js-input-email" name = "email">
                     </div>
                     <div class = "form-field">
                         <input type = "password" placeholder="Пароль" class = "input js-input" name = "pass-first">
@@ -61,7 +62,7 @@ include ("app/controllers/users.php");
             </div>
             <div class = "form-buttons">
 
-                <div class = "divider">Или</div>
+                <div class = "divider"</div>
                 <a href = "login.php">Авторизоваться</a>
                 <h1 class = "form-title"></h1>
             </div>
